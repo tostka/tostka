@@ -1,5 +1,5 @@
 - 🗿 Hi, I’m @tostka
-- 🧐 I’m interested in 👨‍💻Powershell, 🎲Board games, 🌴Tikiculture, 🎸guitar/uke, and mixology🍸 (and the oxford comma ;P)
+- 🧐 I’m interested in 👨‍💻Powershell, 🎲Board games, 🌴Tikiculture, 🎸guitar/uke, and mixology🍸 (and the Oxford Comma ;P)
 - 📚 I’m currently learning 🐍Python
 - 📫 [@tostka on Twitter](http://twitter.com/tostka), [toddomation.com](https://www.toddomation.com/), [linkedin](https://www.linkedin.com/in/todd-kadrie/), 
 
