@@ -1,7 +1,7 @@
-- 🗿 Hi, I’m @tostka
-- 🧐 I’m interested in 👨‍💻Powershell, 🎲Board games, 🌴Tikiculture, 🎸guitar/uke, and mixology🍸 (and the Oxford Comma ;P)
-- 📚 I’m currently learning 🐍Python
-- 📫 [@tostka on Twitter](http://twitter.com/tostka), [toddomation.com](https://www.toddomation.com/), [linkedin](https://www.linkedin.com/in/todd-kadrie/), 
+- 🖖🏻 I’m @tostka 🗿
+- 🧐 interests: 👨‍💻powershell|🎲board games|🌴tikiculture|🎸guitar/uke|🍹mixology🍸 (and the oxford comma ;p)
+- 📚 learning: 🐍python
+- 📫 [@tostka (twitter)](http://twitter.com/tostka), [toddomation.com](https://www.toddomation.com/), [linkedin](https://www.linkedin.com/in/todd-kadrie/), 
 
 <!---
 tostka/tostka is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
