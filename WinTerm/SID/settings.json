@@ -1,63 +1,73 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions":
-    [
+    "actions": [
         {
-            "command":
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
+            "id": "User.paste"
         },
         {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command":
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "keybindings": [
+        {
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        }
+    ],
     "multiLinePasteWarning": false,
-    "newTabMenu":
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles":
-    {
-        "defaults":
-        {
+    "profiles": {
+        "defaults": {
             "cursorShape": "vintage",
-            "font":
-            {
+            "font": {
                 "face": "Cascadia Code",
                 "size": 9
             },
             "showMarksOnScrollbar": true
         },
-        "list":
-        [
+        "list": [
             {
+                "backgroundImage": "C:\\usr\\home\\gdrv\\My Drive\\grfx\\WinTerm\\severance-cubefarm.png",
+                "backgroundImageAlignment": "center",
+                "backgroundImageOpacity": 0.11,
+                "backgroundImageStretchMode": "none",
                 "colorScheme": "Campbell Powershell",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "experimental.retroTerminalEffect": false,
@@ -65,9 +75,9 @@
                 "hidden": false,
                 "icon": "C:\\usr\\home\\grfx\\icons\\tin_omen\\powershell-simple-term.ico",
                 "name": "PS Console",
-                "opacity": 80,
+                "opacity": 100,
                 "startingDirectory": "c:\\usr\\local\\bin\\",
-                "useAcrylic": true
+                "useAcrylic": false
             },
             {
                 "altGrAliasing": true,
@@ -112,12 +122,5 @@
     },
     "schemes": [],
     "tabWidthMode": "titleLength",
-    "themes": [],
-    // custom key bindings, e.g.
-    "keybindings": [
-            {
-                //"command": "find",
-                //"keys": "ctrl+shift+f"
-            }
-    ]
+    "themes": []
 }
