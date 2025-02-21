@@ -32,6 +32,8 @@
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "firstWindowPreference": "persistedWindowLayout",
+    "initialPosition": "-1924,764",
     "keybindings":
     [
         {
@@ -66,21 +68,17 @@
             "font":
             {
                 "face": "Cascadia Code",
-                "size": 9
+                "size": 8
             },
             "showMarksOnScrollbar": true
         },
         "list":
         [
             {
-                "backgroundImage": "C:\\sc\\tostka\\WinTerm\\UID\\artificial-intelligence-trans-221x200.png",
+                "backgroundImage": "C:\\sc\\tostka\\WinTerm\\UID\\severance-mdr-pc_Jasmine Shipman-trans-267x200.png",
                 "backgroundImageAlignment": "bottomRight",
-                "backgroundImageOpacity": 0.30,
+                "backgroundImageOpacity": 0.3,
                 "backgroundImageStretchMode": "none",
-                //"backgroundImage": "C:\\usr\\home\\gdrv\\My Drive\\grfx\\WinTerm\\severance-mdr-pc-icon-200x315.jpg",
-                // "backgroundImageAlignment": "bottomRight",
-                // "backgroundImageOpacity": 0.15,
-                // "backgroundImageStretchMode": "none",
                 "colorScheme": "Campbell Powershell",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "experimental.retroTerminalEffect": false,
@@ -135,5 +133,6 @@
     },
     "schemes": [],
     "tabWidthMode": "titleLength",
-    "themes": []
+    "themes": [],
+    "useAcrylicInTabRow": false
 }
