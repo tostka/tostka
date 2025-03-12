@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions":
+    "actions": 
     [
         {
-            "command":
+            "command": 
             {
                 "action": "copy",
                 "singleLine": false
@@ -16,7 +16,7 @@
             "id": "User.paste"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -30,11 +30,11 @@
         }
     ],
     "copyFormatting": "none",
-    "copyOnSelect": true,
+    "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "firstWindowPreference": "persistedWindowLayout",
-    "initialPosition": "-1924,764",
-    "keybindings":
+    "initialPosition": "-1919,705",
+    "keybindings": 
     [
         {
             "id": "User.copy.644BA8F2",
@@ -54,25 +54,25 @@
         }
     ],
     "multiLinePasteWarning": false,
-    "newTabMenu":
+    "newTabMenu": 
     [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles":
+    "profiles": 
     {
-        "defaults":
+        "defaults": 
         {
             "cursorShape": "vintage",
-            "font":
+            "font": 
             {
                 "face": "Cascadia Code",
                 "size": 8
             },
             "showMarksOnScrollbar": true
         },
-        "list":
+        "list": 
         [
             {
                 "backgroundImage": "C:\\sc\\tostka\\WinTerm\\UID\\severance-mdr-pc_Jasmine Shipman-trans-267x200.png",
