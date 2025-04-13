@@ -1,9 +1,11 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions":
+    [
         {
-            "command": {
+            "command":
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -14,7 +16,8 @@
             "id": "User.paste"
         },
         {
-            "command": {
+            "command":
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -29,7 +32,10 @@
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-    "keybindings": [
+    "firstWindowPreference": "persistedWindowLayout",
+    "initialPosition": "1200,793",
+    "keybindings":
+    [
         {
             "id": "User.copy.644BA8F2",
             "keys": "ctrl+c"
@@ -48,54 +54,44 @@
         }
     ],
     "multiLinePasteWarning": false,
-    "newTabMenu": [
+    "newTabMenu":
+    [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": {
-        "defaults": {
+    "profiles":
+    {
+        "defaults":
+        {
+            "adjustIndistinguishableColors": "always",
             "cursorShape": "vintage",
-            "font": {
+            "font":
+            {
                 "face": "Cascadia Code",
-                "size": 9
+                "size": 8
             },
             "showMarksOnScrollbar": true
         },
-        "list": [
+        "list":
+        [
             {
-                "backgroundImage": "C:\\usr\\home\\gdrv\\My Drive\\grfx\\WinTerm\\severance-cubefarm.png",
-                "backgroundImageAlignment": "center",
-                "backgroundImageOpacity": 0.11,
+                "adjustIndistinguishableColors": "always",
+                "backgroundImage": "C:\\sc\\tostka\\WinTerm\\SID\\shodan_greenchars320x200.png",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageOpacity": 0.3,
                 "backgroundImageStretchMode": "none",
-                "colorScheme": "Campbell Powershell",
+                "colorScheme": "Campbell",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "elevate": false,
                 "experimental.retroTerminalEffect": false,
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "icon": "C:\\usr\\home\\grfx\\icons\\tin_omen\\powershell-simple-term.ico",
-                "name": "PS Console",
+                "icon": "C:\\sc\\tostka\\WinTermSID-red.ico",
+                "name": "PS ADMIN",
                 "opacity": 100,
                 "startingDirectory": "c:\\usr\\local\\bin\\",
-                "useAcrylic": false
-            },
-            {
-                "altGrAliasing": true,
-                "antialiasingMode": "grayscale",
-                "closeOnExit": "automatic",
-                "colorScheme": "Campbell",
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "cursorShape": "bar",
-                "elevate": true,
-                "guid": "{a9720c5a-6072-4d0d-be09-e5a421439eee}",
-                "hidden": false,
-                "historySize": 9001,
-                "icon": "C:\\usr\\home\\grfx\\icons\\tin_omen\\powershell-red(vista).ico",
-                "name": "PS ADMIN",
-                "opacity": 10,
-                "padding": "8, 8, 8, 8",
-                "snapOnInput": true,
-                "startingDirectory": "c:\\usr\\local\\bin\\",
+                "tabTitle": "PS ADMIN",
                 "useAcrylic": false
             },
             {
@@ -122,5 +118,6 @@
     },
     "schemes": [],
     "tabWidthMode": "titleLength",
-    "themes": []
+    "themes": [],
+    "useAcrylicInTabRow": false
 }
