@@ -34,6 +34,8 @@
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "firstWindowPreference": "persistedWindowLayout",
     "initialPosition": "-1919,793",
+    "initialCols": 120,
+    "initialRows": 30,
     "keybindings":
     [
         {
@@ -75,47 +77,84 @@
         "list":
         [
             {
-                "backgroundImage": "C:\\sc\\tostka\\WinTerm\\UID\\severance-mdr-pc_Jasmine Shipman-trans-267x200.png",
+                "adjustIndistinguishableColors": "always",
+                "backgroundImage": "%SystemDrive%\\sc\\tostka\\WinTerm\\UID\\severance-mdr-pc_Jasmine Shipman-trans-267x200.png",
                 "backgroundImageAlignment": "bottomRight",
-                "backgroundImageOpacity": 0.3,
+                "backgroundImageOpacity": 0.19,
                 "backgroundImageStretchMode": "none",
                 "colorScheme": "Campbell Powershell",
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "cursorShape": "vintage",
                 "experimental.retroTerminalEffect": false,
+                "font": {
+                    "face": "Cascadia Mono",
+                    "size": 8
+                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "icon": "C:\\usr\\home\\grfx\\icons\\tin_omen\\powershell-simple-term.ico",
-                "name": "PS Console",
+                "historySize": 9001,
+                "icon": "%SystemDrive%\\sc\\tostka\\WinTerm_default-icon.ico",
+                "name": "Windows PowerShell",
                 "opacity": 100,
-                "startingDirectory": "c:\\usr\\local\\bin\\",
-                "useAcrylic": false
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true, // scroll to the command input line when typing
+                "startingDirectory": "%SystemDrive%\\usr\\local\\bin\\",
+                "useAcrylic": false,
+                "tabTitle": "PS Console",
+                "tabColor": "#012456"
             },
             {
                 "altGrAliasing": true,
                 "antialiasingMode": "grayscale",
+                "backgroundImage": "%SystemDrive%\\sc\\tostka\\WinTerm\\SID\\shodan_greenchars320x200.png",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageOpacity": 0.24,
+                "backgroundImageStretchMode": "none",
                 "closeOnExit": "automatic",
                 "colorScheme": "Campbell",
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "cursorShape": "bar",
+                "commandline": "%SystemDrive%\\tools\\gsudo\\Current\\gsudo.exe %SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "cursorShape": "vintage",
+                "experimental.retroTerminalEffect": false,
+                "font": {
+                    "face": "Cascadia Mono",
+                    "size": 8
+                },
                 "elevate": true,
                 "guid": "{a9720c5a-6072-4d0d-be09-e5a421439eee}",
                 "hidden": false,
                 "historySize": 9001,
-                "icon": "C:\\usr\\home\\grfx\\icons\\tin_omen\\powershell-red(vista).ico",
-                "name": "PS ADMIN",
-                "opacity": 10,
+                "icon": "%SystemDrive%\\sc\\tostka\\WinTermSID-red.ico",
+                "name": "PS RAA",
+                "opacity": 100,
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true,
-                "startingDirectory": "c:\\usr\\local\\bin\\",
+                "startingDirectory": "%SystemDrive%\\usr\\local\\bin\\",
+                "tabColor": "#B01C11",
+                "tabTitle": "PS ADMIN",
                 "useAcrylic": false
             },
             {
                 "adjustIndistinguishableColors": "always",
                 "colorScheme": "Solarized Dark",
+                "backgroundImage": "%SystemDrive%\\sc\\tostka\\WinTerm\\PS7\\Powershell_avatar_241x210t.png",
+                "backgroundImageAlignment": "bottomRight",
+                "backgroundImageOpacity": 0.19,
+                "backgroundImageStretchMode": "none",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "name": "PowerShell",
-                "source": "Windows.Terminal.PowershellCore"
+                "historySize": 9001,
+                "icon": "%SystemDrive%\\sc\\tostka\\WinTerm\\PS7\\Powershell_black.ico",
+                "name": "PsC",
+                //"source": "Windows.Terminal.PowershellCore",
+                "commandline": "%ProgramFiles%\\PowerShell\\7\\pwsh.exe",
+                "cursorShape": "vintage",
+                "opacity": 100,
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%SystemDrive%\\usr\\local\\bin\\",
+                "useAcrylic": false,
+                "tabTitle": "PsC",
+                "tabColor": "#000000"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
