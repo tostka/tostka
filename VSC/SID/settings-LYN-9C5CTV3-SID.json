@@ -121,32 +121,7 @@
     "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
     "projectManager.git.baseFolders": [
         "c:\\sc"
-    ],
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-        "WinPS5": {
-            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-        },
-        "Windows PowerShell": {
-            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-        }
-    },
-    // specify default terminal profile above, for Windows
-    "terminal.integrated.defaultProfile.windows": "Windows PowerShell"
+    ]
     //Specifies the path to a PowerShell Script Analyzer settings file. To override the default settings for all projects, enter an absolute path, or enter a path relative to your workspace.
     //"powershell.scriptAnalysis.settingsPath": ".vscode/PSScriptAnalyzerSettings.psd1"
 }
