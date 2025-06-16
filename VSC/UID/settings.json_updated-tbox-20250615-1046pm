@@ -1,0 +1,152 @@
+// C:\Users\kadrits\AppData\Roaming\Code\User
+// VSC settings.json - Place your settings in this file to overwrite the default settings
+{
+    // 2:01 PM 8/20/2020 added a variety of codeformatting settings and ref for what's avail, also added the OTB style spec
+    // 1:07 PM 9/20/2016 added vsc profile
+    // TSK customized privacy 9:32 AM 9/9/2016
+    // Enable usage data and errors to be sent to Microsoft.
+    "telemetry.enableTelemetry": false,
+    // Enable crash reports to be sent to Microsoft.
+    // This option requires restart to take effect.
+    "telemetry.enableCrashReporter": false,
+    // 12:03 PM 9/9/2016 hard-code git "php.validate.executablePath":
+    // to workaround Warn Code works best with error
+    // Is git enabled
+    "git.enabled": true,
+    // Path to the git executable dbl'd //
+    //"git.path": "C:\\tools\\cmder\\vendor\\git-for-windows\\bin\\git.exe",
+    "git.path": "C:\\Program Files\\Git\\cmd\\git.exe",
+    // other settings
+    /// 5:32 PM 7/17/2019 rem'd before reinstalling non-deprecated version
+    // vscode-gist oath token/Personal Access "gist.oauth_token":
+    //"gist.oauth_token": "c795db089ad97f0c9fc3441d2c3b9bd0e59a6521",
+    "workbench.colorTheme": "PowerShell ISE",
+    "workbench.welcome.enabled": false,
+    "sync.gist": "8ef9695f99e0a1aa3ab255c9cab69fc4",
+    "sync.lastUpload": "",
+    // 1:14 PM 2/20/2020 turn auto sync back on
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.lastDownload": "2017-06-16T01:03:22.847Z",
+    "sync.version": 262,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "window.menuBarVisibility": "default",
+    "terminal.integrated.rendererType": "dom",
+    // splice from Make Visual Studio Code look and behave like PowerShell ISE – 4sysops - https://4sysops.com/archives/make-visual-studio-code-look-and-behave-like-powershell-ise/
+    // Number of spaces for tabs
+    //"editor.tabSize": 4, // Default: 4
+    // Use spaces not tabs
+    //"editor.insertSpaces": true, // Default: true
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "editor.wordWrap": "on",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    // Ruler @ 80chars (notice long lines)
+    "editor.rulers": [
+        80
+    ],
+    // When enabled, will trim trailing whitespace when saving a file.
+    "files.trimTrailingWhitespace": true,
+    // Stroustrup brace style (would prefer Cuddled-Else!)
+    // Places open brace on the same line as its associated statement.
+    "powershell.codeFormatting.openBraceOnSameLine": true,
+    // Adds a newline (line break) after an open brace
+    "powershell.codeFormatting.newLineAfterOpenBrace": true,
+    // Adds a newline (line break) after a closing brace.
+    //"powershell.codeFormatting.newLineAfterCloseBrace": true,
+    "powershell.codeFormatting.newLineAfterCloseBrace": false,
+    // Does not reformat one-line code blocks, such as "if (...) {...} else {...}".
+    "powershell.codeFormatting.ignoreOneLineBlock": true,
+    // Align assignment statements in a hashtable or a DSC Configuration.
+    "powershell.codeFormatting.alignPropertyValuePairs": true,
+    // more avail settings
+    // Adds spaces before and after an operator ('=', '+', '-', etc.).
+    //     "powershell.codeFormatting.whitespaceAroundOperator": true,
+    // Adds a space between a keyword and its associated scriptblock expression.
+    //"powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
+    // Adds a space between a keyword (if, elseif, while, switch, etc) and its associated conditional expression.
+    //     "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
+    // Adds a space after a separator (',' and ';').
+    //     "powershell.codeFormatting.whitespaceAfterSeparator": true,
+    //  - off: A dirty file is never automatically saved.
+    //  - afterDelay: A dirty file is automatically saved after the configured `files.autoSaveDelay`.
+    //  - onFocusChange: A dirty file is automatically saved when the editor loses focus.
+    //  - onWindowChange: A dirty file is automatically saved when the window loses focus.
+    //Sets the codeformatting options to follow the given indent style in a way that is compatible with PowerShell syntax. For more information about the brace styles please refer to https://github.com/PoshCode/PowerShellPracticeAndStyle/issues/81.
+    "powershell.codeFormatting.preset": "OTBS", // Default: Custom
+    // Format a file on save. A formatter must be available, the file must not be saved after delay, and the editor must not be shutting down.
+    //"editor.formatOnSave": true, // Default: False
+    "files.autoSave": "onWindowChange",
+    "powershell.enableProfileLoading": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    // load psterm with no profile & a manual "profile" script
+    //"terminal.integrated.shell.windows": "C:\\sc\\powershell\\PSProfileUID\\startvsc-ps.cmd",
+    "files.associations": {
+        "*.ps1": "powershell"
+    },
+    //To keep the focus in the editor when you execute with F8:
+    "powershell.integratedConsole.focusConsoleOnExecute": false,
+    //To make new/untitled files, register as PowerShell by default:
+    "files.defaultLanguage": "powershell",
+    "breadcrumbs.enabled": true,
+    "window.zoomLevel": 0,
+    // Zoom the font of the editor when using mouse wheel and holding `Ctrl`.
+    "editor.mouseWheelZoom": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "bracket-pair-colorizer-2.colorMode": "Independent",
+    // dark theme bracket scheme
+    //"bracket-pair-colorizer-2.colors": [
+    //    "Gold",
+    //    "Orchid",
+    //    "LightSkyBlue"
+    //],
+    // light theme (blue, red, LightSkyBlue)
+    "bracket-pair-colorizer-2.colors": [
+        "Blue",
+        "Red",
+        "LightSkyBlue"
+    ],
+    "powershell.promptToUpdatePowerShell": false,
+    "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
+    "projectManager.git.baseFolders": [
+        "c:\\sc"
+    ],
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "WinPS5": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    // specify default terminal profile above, for Windows
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell"
+    //Specifies the path to a PowerShell Script Analyzer settings file. To override the default settings for all projects, enter an absolute path, or enter a path relative to your workspace.
+    //"powershell.scriptAnalysis.settingsPath": ".vscode/PSScriptAnalyzerSettings.psd1"
+}
