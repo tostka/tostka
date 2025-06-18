@@ -58,4 +58,9 @@
         "command": "bracket-pair-colorizer.undoBracketSelection",
         "when": "editorTextFocus"
     }
+    // Path intelisense bug fix
+    {
+        "key": ".",
+        "command": ""
+    }
 ]

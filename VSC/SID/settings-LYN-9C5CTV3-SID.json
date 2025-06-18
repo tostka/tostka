@@ -55,6 +55,8 @@
     "editor.rulers": [
         80
     ],
+    // explorer sort order
+    explorer.sortOrder: "modified",
     // When enabled, will trim trailing whitespace when saving a file.
     "files.trimTrailingWhitespace": true,
     // Stroustrup brace style (would prefer Cuddled-Else!)
