@@ -1,0 +1,255 @@
+// C:\Users\kadrits\AppData\Roaming\Code\User
+// VSC settings.json - Place your settings in this file to overwrite the default settings
+{
+    // 2:01 PM 8/20/2020 added a variety of codeformatting settings and ref for what's avail, also added the OTB style spec
+    // 1:07 PM 9/20/2016 added vsc profile
+    // TSK customized privacy 9:32 AM 9/9/2016
+    // Enable usage data and errors to be sent to Microsoft.
+    "telemetry.enableTelemetry": false,
+    // Enable crash reports to be sent to Microsoft.
+    // This option requires restart to take effect.
+    "telemetry.enableCrashReporter": false,
+    // 12:03 PM 9/9/2016 hard-code git "php.validate.executablePath":
+    // to workaround Warn Code works best with error
+    // Is git enabled
+    "git.enabled": true,
+    // Path to the git executable dbl'd //
+    //"git.path": "C:\\tools\\cmder\\vendor\\git-for-windows\\bin\\git.exe",
+    "git.path": "C:\\Program Files\\Git\\cmd\\git.exe",
+    // other settings
+    /// 5:32 PM 7/17/2019 rem'd before reinstalling non-deprecated version
+    // vscode-gist oath token/Personal Access "gist.oauth_token":
+    //"gist.oauth_token": "c795db089ad97f0c9fc3441d2c3b9bd0e59a6521",
+    "workbench.colorTheme": "PowerShell ISE",
+    "workbench.welcome.enabled": false,
+    "sync.gist": "8ef9695f99e0a1aa3ab255c9cab69fc4",
+    "sync.lastUpload": "",
+    // 1:14 PM 2/20/2020 turn auto sync back on
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.lastDownload": "2017-06-16T01:03:22.847Z",
+    "sync.version": 262,
+    "sync.showSummary": true,
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "window.menuBarVisibility": "classic",
+    "terminal.integrated.rendererType": "dom",
+    // splice from Make Visual Studio Code look and behave like PowerShell ISE – 4sysops - https://4sysops.com/archives/make-visual-studio-code-look-and-behave-like-powershell-ise/
+    // Number of spaces for tabs
+    //"editor.tabSize": 4, // Default: 4
+    // Use spaces not tabs
+    //"editor.insertSpaces": true, // Default: true
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "editor.wordWrap": "on",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    // Ruler @ 80chars (notice long lines)
+    "editor.rulers": [
+        80
+    ],
+    // When enabled, will trim trailing whitespace when saving a file.
+    "files.trimTrailingWhitespace": true,
+    // Stroustrup brace style (would prefer Cuddled-Else!)
+    // Places open brace on the same line as its associated statement.
+    "powershell.codeFormatting.openBraceOnSameLine": true,
+    // Adds a newline (line break) after an open brace
+    "powershell.codeFormatting.newLineAfterOpenBrace": true,
+    // Adds a newline (line break) after a closing brace.
+    //"powershell.codeFormatting.newLineAfterCloseBrace": true,
+    "powershell.codeFormatting.newLineAfterCloseBrace": false,
+    // Does not reformat one-line code blocks, such as "if (...) {...} else {...}".
+    "powershell.codeFormatting.ignoreOneLineBlock": true,
+    // Align assignment statements in a hashtable or a DSC Configuration.
+    "powershell.codeFormatting.alignPropertyValuePairs": true,
+    // more avail settings
+    // Adds spaces before and after an operator ('=', '+', '-', etc.).
+    //     "powershell.codeFormatting.whitespaceAroundOperator": true,
+    // Adds a space between a keyword and its associated scriptblock expression.
+    //"powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
+    // Adds a space between a keyword (if, elseif, while, switch, etc) and its associated conditional expression.
+    //     "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
+    // Adds a space after a separator (',' and ';').
+    //     "powershell.codeFormatting.whitespaceAfterSeparator": true,
+    //  - off: A dirty file is never automatically saved.
+    //  - afterDelay: A dirty file is automatically saved after the configured `files.autoSaveDelay`.
+    //  - onFocusChange: A dirty file is automatically saved when the editor loses focus.
+    //  - onWindowChange: A dirty file is automatically saved when the window loses focus.
+    //Sets the codeformatting options to follow the given indent style in a way that is compatible with PowerShell syntax. For more information about the brace styles please refer to https://github.com/PoshCode/PowerShellPracticeAndStyle/issues/81.
+    "powershell.codeFormatting.preset": "OTBS", // Default: Custom
+    // Format a file on save. A formatter must be available, the file must not be saved after delay, and the editor must not be shutting down.
+    //"editor.formatOnSave": true, // Default: False
+    "files.autoSave": "onWindowChange",
+    "powershell.enableProfileLoading": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    // load psterm with no profile & a manual "profile" script
+    //"terminal.integrated.shell.windows": "C:\\sc\\powershell\\PSProfileUID\\startvsc-ps.cmd",
+    "files.associations": {
+        "*.ps1": "powershell"
+    },
+    //To keep the focus in the editor when you execute with F8:
+    "powershell.integratedConsole.focusConsoleOnExecute": false,
+    //To make new/untitled files, register as PowerShell by default:
+    "files.defaultLanguage": "powershell",
+    "breadcrumbs.enabled": true,
+    "window.zoomLevel": 0,
+    // Zoom the font of the editor when using mouse wheel and holding `Ctrl`.
+    "editor.mouseWheelZoom": true,
+    // v -- rdp tuned settings: --v
+    //"editor.fontLigatures": false,
+    // may need to "'name'" combo  quote names with spaces
+    //"editor.fontFamily": "'Lucida Console'","'Courier New'",
+    // In the default settings, VS Code uses the following fonts (14 pt) in descending order: Monaco,Menlo,Consolas,Droid Sans Mono,Inconsolata,Courier New,monospace
+    // point font size
+    //"editor.fontSize": 12,
+    // adj spacing between lines
+    //"editor.lineHeight": 24,
+    // adj spacing between chars 'kerning' - positive incr, neg decreas
+    //"editor.letterSpacing": -0.15,
+    // [VS Code Instructions · tonsky/FiraCode Wiki](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions)
+    // spec a bold weight:
+    //"editor.fontWeight": "650"
+    // or as specic weight equivelents
+    //    "editor.fontWeight": "300" // Light
+    //    "editor.fontWeight": "400" // Regular
+    //    "editor.fontWeight": "450" // Retina !! Only works with FiraCode-VF.ttf installed, see below when using separated font files (the normal case).
+    //    "editor.fontWeight": "500" // Medium
+    //    "editor.fontWeight": "600" // Bold
+    // v -- rdp tuned settings: --v
+    "editor.fontLigatures": false,
+    "editor.fontFamily": "'Lucida Console'",
+    "'Courier New'",
+    "editor.fontSize": 12,
+    "editor.letterSpacing": -0.15,
+    "editor.fontWeight": "650"
+    // ^ -- rdp tuned settings: --^
+    "bracket-pair-colorizer-2.colorMode": "Independent",
+    // dark theme bracket scheme
+    //"bracket-pair-colorizer-2.colors": [
+    //    "Gold",
+    //    "Orchid",
+    //    "LightSkyBlue"
+    //],
+    // light theme (blue, red, LightSkyBlue)
+    "bracket-pair-colorizer-2.colors": [
+        "Blue",
+        "Red",
+        "LightSkyBlue"
+    ],
+    "powershell.promptToUpdatePowerShell": false,
+    "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
+    "projectManager.git.baseFolders": [
+        "c:\\sc"
+    ],
+    "terminal.integrated.profiles.windows": {
+        //"PowerShell": {
+        //    "source": "PowerShell",
+        //   "icon": "terminal-powershell"
+        //},
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Windows PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        }
+    },
+    // specify default terminal profile above, for Windows
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "git.openRepositoryInParentFolders": "always",
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+    "editor.matchBrackets": "never",
+    "settingsSync.keybindingsPerPlatform": false,
+    "settingsSync.ignoredExtensions": [],
+    "settingsSync.ignoredSettings": [],
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        },
+        {
+            "name": "Pale Yellow TDO",
+            "value": "rgb(255,255,179)"
+        },
+        {
+            "name": "Basic Tan TDO",
+            "value": "rgb(179,189,117)"
+        },
+        {
+            "name": "Light Medium Blue TDO",
+            "value": "rgb(159,170,244)"
+        },
+        {
+            "name": "SID Red TDO",
+            "value": "rgb 255 6 6"
+        },
+        {
+            "name": "Orange SID TDO",
+            "value": "RGB 255 149 43"
+        },
+        {
+            "name": "Mint Green TDO",
+            "value": "rgb 0 230 115"
+        },
+        {
+            "name": "Gray Medium TDO",
+            "value": "rgb 209 209 209"
+        },
+        {
+            "name": "Navy Blue TDO",
+            "value": "rgb 0 0 79"
+        }
+    ],
+    "terminal.integrated.autoReplies": {
+
+    },
+    "telemetry.telemetryLevel": "off",
+    "telemetry.feedback.enabled": false,
+    //"terminal.integrated.automationProfile.linux": {}
+    //Specifies the path to a PowerShell Script Analyzer settings file. To override the default settings for all projects, enter an absolute path, or enter a path relative to your workspace.
+    //"powershell.scriptAnalysis.settingsPath": ".vscode/PSScriptAnalyzerSettings.psd1"
+}

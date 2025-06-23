@@ -1,0 +1,44 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+// TSK version: put 'em under ctrl+t (Text shortcuts)
+// 9:47 AM 10/24/2016 fixed duped ctrl+t c binding
+// 10:03 AM 10/5/2016 1st pass at case control extension bindings, below ctrl+t (text)
+// UCASE
+{ "key": "ctrl+t u", "command": "extension.changeCase.upper",
+                        "when": "editorTextFocus" },
+// UCASE 1st (that's 'u' then the number '1')
+{ "key": "ctrl+t u1", "command": "extension.changeCase.upper",
+                        "when": "editorTextFocus" },
+// lcase
+{ "key": "ctrl+t l", "command": "extension.changeCase.lower",
+                        "when": "editorTextFocus" },
+// lcase 1st (that's 'L' then the number '1')
+{ "key": "ctrl+t l1", "command": "extension.changeCase.lowerFirst",
+                        "when": "editorTextFocus" },
+// CamelCase (needs spaces between words to collapse into caps, can't tell word boundaries otherwise)
+{ "key": "ctrl+t c", "command": "extension.changeCase.camel",
+                        "when": "editorTextFocus" },
+// TitleCase
+{ "key": "ctrl+t t", "command": "extension.changeCase.title",
+                        "when": "editorTextFocus" },
+
+// EditorServicesCommandSuite binding (added 11:49 AM 4/23/2018)
+{ "key": "ctrl+shift+c",   "command": "PowerShell.ShowAdditionalCommands",
+    "when": "editorLangId == 'powershell'" },
+    
+// TSK:CoenraadS.bracket-pair-colorizer bindings (added 8:11 AM 7/27/2018)
+// expand selection to matching brace
+{
+    "key": "shift+alt+right",
+    "command": "bracket-pair-colorizer.expandBracketSelection",
+    "when": "editorTextFocus"
+},
+// contract selection back to cursor
+{
+    "key": "shift+alt+left",
+    "command": "bracket-pair-colorizer.undoBracketSelection",
+    "when": "editorTextFocus"
+}
+
+]
+
