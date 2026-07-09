@@ -50,11 +50,11 @@ Related topic or http://|https://
 [CmdletBinding()]
 PARAM(
     [Parameter(Mandatory, ValueFromPipeline, HelpMessage = 'Parameter description')]
-		[ValidateNotNullOrEmpty()]	
+		[ValidateNotNullOrEmpty()]
 		[string[]]$Names,
 	[Parameter(HelpMessage = 'Parameter description')]
 		[switch]$Force
-) ; 
+) ;
 BEGIN {
     # One-time setup
 } ;  # BEGIN-END
@@ -99,8 +99,8 @@ function Verb-Noun {
 	.OUTPUTS
 	Returns no objects or output .NET types
 	.EXAMPLE
-	PS> Example-Usage -Name 'Value' ; 
-	
+	PS> Example-Usage -Name 'Value' ;
+
 		Sample output
 
 	Description of sample purpose
@@ -129,7 +129,7 @@ function Verb-Noun {
 				# Implementation
 				if ($PassThru) { Write-Output $result }
 			}
-		} ; 
+		} ;
     } ; # PROCESS-END
 	END {
 		# Cleanup
@@ -187,25 +187,47 @@ See [powershellget.md](references/powershellget.md) for full cmdlet reference.
 TRY {
     $result = Get-Content -Path $Path -ErrorAction Stop
 } CATCH [System.IO.FileNotFoundException] {
-    Write-Error "File not found: $Path" ; 
-    return ; 
+    Write-Error "File not found: $Path" ;
+    return ;
 } CATCH {
 	$ErrTrapd=$Error[0] ;
 	$smsg = "`n$(($ErrTrapd | fl * -Force|out-string).trim())" ;
 	write-warning "$((get-date).ToString('HH:mm:ss')):$($smsg)" ;
-	throw $smsg ; 
+	throw $smsg ;
 } ;
+```
+
+### Wrap Cloud Service Connect-/Get-/Set-/Update- etc. commands with Error Retry code (workaround transitory service & throttling errors)
+```powershell
+$DoRetries = 4 ;
+$RetrySleep = 10 ;
+$Exit = 0 ;
+Do {
+		TRY{
+				# connect to Microsoft.Graph:
+				Connect-MgGraph -Scopes $RequiredScopes -erroraction 'STOP'  ;
+				$Exit = $DoRetries ;
+		} CATCH {
+				$ErrTrapd=$Error[0] ;
+				$smsg = "`n$(($ErrTrapd | fl * -Force|out-string).trim())" ;
+				write-warning  "$((get-date).ToString('HH:mm:ss')):$($smsg)" ;
+				Start-Sleep -Seconds $RetrySleep ;
+				$Exit ++ ;
+				Write-Verbose "Try #: $Exit" ;
+				If ($Exit -eq $DoRetries) {Write-Warning "Unable to exec cmd!"; RETURN ; } ;
+		} ;
+} Until ($Exit -eq $DoRetries) ;
 ```
 
 ### Splatting for Readability
 ```powershell
 $params = [ordered]@{
-    Path        = $sourcePath ; 
-    Destination = $destPath ; 
-    Recurse     = $true ; 
-    Force       = $true ; 
-} ; 
-Copy-Item @params ; 
+    Path        = $sourcePath ;
+    Destination = $destPath ;
+    Recurse     = $true ;
+    Force       = $true ;
+} ;
+Copy-Item @params ;
 ```
 
 ### Pipeline Best Practices
@@ -219,22 +241,23 @@ foreach ($item in $collection) {
 PARAM(
     [Parameter(ValueFromPipeline)]
     [string[]]$InputObject
-) ; 
+) ;
 PROCESS {
     foreach ($obj in $InputObject) {
         # Process each
-    } ; 
-} ; 
+    } ;
+} ;
 ```
 
 ### write-verbose?/write-debug?
-- Use `Write-Verbose` for informational messages that may be helpful for debugging but are not critical to the user, only visible when the `-Verbose` switch is used. 
+- Use `Write-Verbose` for informational messages that may be helpful for debugging but are not critical to the user, only visible when the `-Verbose` switch is used.
 - Use `Write-Debug` for detailed debugging information that is typically only relevant when troubleshooting specific issues. This can be enabled with the `-Debug` switch when running the function.
-- Avoid using `Write-Host` for regular output; reserve it for special cases where you want to display colored or formatted output directly to the console. For standard output, return objects or use `Write-Output`.
+- Use `Write-Host` for processing status feedback. For standard output, return objects or use `Write-Output`.
 
-### psm1 file 
+### psm1 file
 - The `.psm1` file should contain all individual functions and class files, and the `Export-ModuleMember` call to specify which public functions are exported. The build script will handle the creation of the `.psm1` manifest file, so you do not need to create that manually.
 - All actual code (functions, classes) should live in separate `.ps1` files under the module root directory, organized into `Public`, `Internal`, and `Classes` subdirectories.
+
 ## Module Recommendations
 
 When recommending modules, search the PowerShell Gallery:
